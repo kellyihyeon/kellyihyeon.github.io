@@ -1,225 +1,150 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Tag: 오브젝트, 객체, 설계 | 지식 보관소</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="필요할 때 꺼내쓰기 위해 잘 정리된 자료를 보관하는 곳">
-<meta property="og:type" content="website">
-<meta property="og:title" content="지식 보관소">
-<meta property="og:url" content="https://kellyihyeon.github.io/tags/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EA%B0%9D%EC%B2%B4-%EC%84%A4%EA%B3%84/index.html">
-<meta property="og:site_name" content="지식 보관소">
-<meta property="og:description" content="필요할 때 꺼내쓰기 위해 잘 정리된 자료를 보관하는 곳">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="kelly">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="지식 보관소" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Tag: 오브젝트, 객체, 설계 - 지식 보관소</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="지식 보관소"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="지식 보관소"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="필요할 때 꺼내쓰기 위해 잘 정리된 자료를 보관하는 곳"><meta property="og:type" content="blog"><meta property="og:title" content="지식 보관소"><meta property="og:url" content="https://kellyihyeon.github.io/"><meta property="og:site_name" content="지식 보관소"><meta property="og:description" content="필요할 때 꺼내쓰기 위해 잘 정리된 자료를 보관하는 곳"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://kellyihyeon.github.io/img/og_image.png"><meta property="article:author" content="kelly"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://kellyihyeon.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://kellyihyeon.github.io"},"headline":"지식 보관소","image":["https://kellyihyeon.github.io/img/og_image.png"],"author":{"@type":"Person","name":"kelly"},"publisher":{"@type":"Organization","name":"지식 보관소","logo":{"@type":"ImageObject","url":"https://kellyihyeon.github.io/img/logo.svg"}},"description":"필요할 때 꺼내쓰기 위해 잘 정리된 자료를 보관하는 곳"}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="지식 보관소" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">오브젝트, 객체, 설계</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-11-12T02:21:59.000Z" title="2023. 11. 12. 오전 11:21:59">2023-11-12</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-11-12T02:25:55.644Z" title="2023. 11. 12. 오전 11:25:55">2023-11-12</time></span><span class="level-item">24 minutes read (About 3552 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/11/12/object-1-object-and-design/">Object - 1.객체, 설계</a></p><div class="content"><h1 id="1-티켓-판매-애플리케이션-구현하기"><a href="#1-티켓-판매-애플리케이션-구현하기" class="headerlink" title="1. 티켓 판매 애플리케이션 구현하기"></a>1. 티켓 판매 애플리케이션 구현하기</h1><p>이벤트에 당첨되어 초대권을 가지고 있는 관람객과 그렇지 못한 관람객에게 티켓을 판매하는 애플리케이션을 구현해야합니다. 초대권을 가지고 있는 관람객은 초대장을 티켓으로 교환한 후 입장하고 초대권을 가지고 있지 않은 관람객은 티켓을 구매해서 입장을 해야 합니다.</p>
+<h2 id="코드-설명"><a href="#코드-설명" class="headerlink" title="코드 설명"></a>코드 설명</h2><p>이벤트 당첨자는 초대장을 가지고 있고, 이벤트에 당첨되지 않은 사람은 티켓을 구매할 현금을 가지고 있습니다. 관람객이 가지고 올 수 있는 물건은 현금, 초대장, 티켓 세가지가 있고 물건을 보관할 가방을 들고 올 수 있다고 가정합니다.</p>
+<p>Bag 인스턴스의 상태는 두가지가 될 수 있습니다. 이벤트에 당첨되지 않은 관람객은 티켓을 구매해야 하니 현금만 보관할 수 있고, 이벤트 당첨자는 초대장과 현금을 보관할 수 있습니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Invitation</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> LocaldateTime when;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">지식 보관소</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">주요활동: 자료 수집 및 정돈</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://kellyihyeon.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Ticket</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Long fee;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> Long <span class="title function_">getFee</span><span class="params">()</span> &#123; </span><br><span class="line">			<span class="keyword">return</span> fee;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/11/12/object-1-object-and-design/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-11-12T02:21:59.000Z" itemprop="datePublished">Nov 12</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/11/12/object-1-object-and-design/">Object - 1.객체, 설계</a>
-    </h1>
-  
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Bag</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Long amount:</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Invitation invitation; </span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Ticket ticket;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Bag</span><span class="params">(<span class="type">long</span> amount)</span> &#123;</span><br><span class="line">				<span class="built_in">this</span>(<span class="literal">null</span>, amount); </span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Bag</span><span class="params">(Invitation invitation, <span class="type">long</span> amount)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.invitation = invitation;</span><br><span class="line">			<span class="built_in">this</span>.amount = amount;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">hasInvitation</span><span class="params">()</span> &#123; </span><br><span class="line">			<span class="keyword">return</span> invitation != <span class="literal">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">hasTicket</span><span class="params">()</span> &#123; </span><br><span class="line">			<span class="keyword">return</span> ticket != <span class="literal">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setTicket</span><span class="params">(Ticket ticket)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.ticket = ticket;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">minusAmount</span> <span class="params">(Long amount)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.amount -= amount;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">plusAmount</span> <span class="params">(Long amount)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.amount += amount;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Audience</span> &#123; </span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Bag bag;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Audience</span><span class="params">(Bag bag)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.bag = bag;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> Bag <span class="title function_">getBag</span><span class="params">()</span> &#123; </span><br><span class="line">			<span class="keyword">return</span> bag;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>관람객이 극장에 입장하려면 매표소를 거쳐야 합니다. 이벤트 당첨자는 매표소에서 초대장을 티켓으로 교환하고 그렇지 않은자는 티켓을 구매해야 합니다. 매표소는 관람객에게 판매할 티켓과 티켓의 판매금액을 보관하고 있습니다. 판매원은 매표소에서 초대장을 티켓으로 교환해 주거나 티켓을 판매하는 역할을 하고 있습니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TicketOffice</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Long amount;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> List&lt;Ticket&gt; tickets = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">TicketOffice</span><span class="params">(Long amount, Ticket . . . tickets)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.amount = amount;</span><br><span class="line">				<span class="built_in">this</span>.tickets.addAll(Arrays.aslist(tickets));</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> Ticket <span class="title function_">getTicket</span><span class="params">()</span> &#123; </span><br><span class="line">				<span class="keyword">return</span> tickets.remove(<span class="number">0</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">minusAmount</span> <span class="params">(Long amount)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.amount -= amount;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">plusAmount</span><span class="params">(Long amount)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.amount += amount;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TicketSeller</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> TicketOffice ticketOffice;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">TicketSeller</span><span class="params">(TicketOffice ticketoffice)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.ticketoffice = ticketoffice;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> Ticketoffice <span class="title function_">getTicketOffice</span><span class="params">()</span> &#123; </span><br><span class="line">				<span class="keyword">return</span> ticketoffice;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql-order-by-group-by-rank-partition-by/" rel="tag">mysql, order by, group by, rank, partition by</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EB%8F%85%ED%9B%84%EA%B0%90/" rel="tag">객체지향의 사실과 오해, 독후감</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EC%B6%94%EC%83%81%ED%99%94-%EB%8B%A4%ED%98%95%EC%84%B1-%EB%8F%85%ED%9B%84%EA%B0%90/" rel="tag">객체지향의 사실과 오해, 추상화, 다형성, 독후감</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EA%B0%9D%EC%B2%B4-%EC%84%A4%EA%B3%84/" rel="tag">오브젝트, 객체, 설계</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%ED%98%BC%EC%9E%90%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/" rel="tag">혼자공부하는컴퓨터구조</a></li></ul>
-    </div>
-  </div>
+<p>해당 클래스들을 조합해서 극장이 관람객을 입장시키고 있는 로직입니다.</p>
+<p>해당 코드를 살펴보면 극장은 관람객의 가방에 초대장이 있는지 확인을 합니다. 초대장이 들어 있으면 판매원에게서 티켓을 받아 관람객의 가방에 넣어줍니다. 가방에 초대장이 없는 경우에는 극장이 관람객의 가방에서 티켓 가격만큼 금액을 꺼내고나서 매표소에 티켓 가격만큼 금액을 증가시켜 놓습니다. 그리고 관람객의 가방에 티켓을 넣어줍니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Theater</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> TicketSeller ticketSeller;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Theater</span><span class="params">(TicketSeller ticketSeller)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.ticketSeller = ticketSeller;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">enter</span> <span class="params">(Audience audience)</span> &#123;</span><br><span class="line">				<span class="keyword">if</span> (audience.getBag().hasInvitation()) &#123;</span><br><span class="line">					<span class="type">Ticket</span> <span class="variable">ticket</span> <span class="operator">=</span> ticketSeller.getTicketOffice().getTicket);</span><br><span class="line">					audience.getBag().setTicket(ticket); </span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					<span class="type">Ticket</span> <span class="variable">ticket</span> <span class="operator">=</span> ticketSeller.getTicketOffice().getTicket(); </span><br><span class="line">					audience.getBag().minusAmount(ticket.getFee()); </span><br><span class="line">					ticketSeller.getTicketOffice().plusAmount(ticket.getFee()); </span><br><span class="line">					audience.getBag().setTicket(ticket);</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>애플리케이션 구현이 끝났습니다. 작성된 프로그램을 실행하면 의도대로 동작하는 것을 확인할 수 있습니다. 하지만 해당 프로그램에는 몇가지 문제점이 있는데 어떤 문제점이 있는지 살펴봅시다.</p>
+<h1 id="2-구현한-애플리케이션의-문제점"><a href="#2-구현한-애플리케이션의-문제점" class="headerlink" title="2. 구현한 애플리케이션의 문제점"></a>2. 구현한 애플리케이션의 문제점</h1><p>로버트 마틴이 소개한 소프트웨어 모듈이 가져야 하는 세 가지 기능을 적용하여 해당 어플리케이션이 어떤 문제점을 가지고 있는지 살펴보겠습니다.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">소프트웨어 모듈이 가져야 하는 세 가지 목적</span><br><span class="line">첫번째, 실행 중에 제대로 동작하는 것</span><br><span class="line">두번째, 변경을 위해 존재하는 것</span><br><span class="line">세번째, 코드를 읽는 사람과 의사소통 하는 것</span><br></pre></td></tr></table></figure>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/mysql-order-by-group-by-rank-partition-by/" style="font-size: 10px;">mysql, order by, group by, rank, partition by</a> <a href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EB%8F%85%ED%9B%84%EA%B0%90/" style="font-size: 10px;">객체지향의 사실과 오해, 독후감</a> <a href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EC%B6%94%EC%83%81%ED%99%94-%EB%8B%A4%ED%98%95%EC%84%B1-%EB%8F%85%ED%9B%84%EA%B0%90/" style="font-size: 10px;">객체지향의 사실과 오해, 추상화, 다형성, 독후감</a> <a href="/tags/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EA%B0%9D%EC%B2%B4-%EC%84%A4%EA%B3%84/" style="font-size: 10px;">오브젝트, 객체, 설계</a> <a href="/tags/%ED%98%BC%EC%9E%90%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/" style="font-size: 10px;">혼자공부하는컴퓨터구조</a>
-    </div>
-  </div>
+<p>Theater 클래스의 enter 메서드가 하는 일을 살펴봅시다.</p>
+<p>관람객의 가방에 초대장이 있는지 확인합니다. 초대장이 있다면 판매원이 매표소에서 티켓을 꺼내 관람객의 가방에 넣어줍니다. 가방에 초대장이 없다면 판매원은 관람객의 가방에서 티켓 금액만큼 현금을 꺼내고 매표소에 현금을 넣어 놓습니다. 그리고 매표소에서 티켓을 꺼내 관람객의 가방에 넣어줍니다.</p>
+<h2 id="문제점1-관람객과-판매원은-수동적인-존재이다"><a href="#문제점1-관람객과-판매원은-수동적인-존재이다" class="headerlink" title="문제점1. 관람객과 판매원은 수동적인 존재이다"></a>문제점1. 관람객과 판매원은 수동적인 존재이다</h2><p>관람객의 관점에서 극장이 하는 일을 보면 자신의 가방을 마음대로 열어서 초대장을 확인하고 가방에 티켓을 넣어줍니다. 그리고 본인이 소유하고 있는 현금까지도 마음대로 빼가구요. 판매원의 관점에서도 마찬가지입니다. 극장은 자기가 일하는 매표소에서 티켓을 마음대로 빼가고 티켓 금액도 마음대로 넣어 놓습니다.</p>
+<p>현실에서는 관람객이 가방에서 초대장을 꺼내 티켓과 교환합니다. 초대장이 없다면 현금을 내고 티켓을 구매합니다. 판매원은 자신이 일하는 매표소에서 관람객이 초대장을 주면 티켓으로 교환해주거나 티켓을 판매합니다.</p>
+<p>코드에서 관람객과 판매원은 현실에서와 다르게 행동합니다. 코드 안에서 관람객과 판매원은 극장의 통제를 받는 수동적인 존재입니다. 그렇기 때문에 <strong>코드를 읽는 사람과 제대로 된 의사소통을 할 수가 없습니다.</strong></p>
+<h2 id="문제점2-극장은-모든-것을-기억해야-한다"><a href="#문제점2-극장은-모든-것을-기억해야-한다" class="headerlink" title="문제점2. 극장은 모든 것을 기억해야 한다"></a>문제점2. 극장은 모든 것을 기억해야 한다</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">enter</span> <span class="params">(Audience audience)</span> &#123;</span><br><span class="line">				<span class="keyword">if</span> (audience.getBag().hasInvitation()) &#123;</span><br><span class="line">					<span class="type">Ticket</span> <span class="variable">ticket</span> <span class="operator">=</span> ticketSeller.getTicketOffice().getTicket);</span><br><span class="line">					audience.getBag().setTicket(ticket); </span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					<span class="type">Ticket</span> <span class="variable">ticket</span> <span class="operator">=</span> ticketSeller.getTicketOffice().getTicket(); </span><br><span class="line">					audience.getBag().minusAmount(ticket.getFee()); </span><br><span class="line">					ticketSeller.getTicketOffice().plusAmount(ticket.getFee()); </span><br><span class="line">					audience.getBag().setTicket(ticket);</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
-    </div>
-  </div>
+<p>극장의 enter 메서드가 하는 일을 다시 보면서 극장이 알고 있는 사항을 나열해 봅시다.</p>
+<ul>
+<li>관람객이 가방을 가지고 있다</li>
+<li>가방에는 초대장과 티켓과 현금이 있다</li>
+<li>판매원의 매표소에 티켓과 현금이 있다</li>
+</ul>
+<p>극장 클래스의 enter 메서드는 이 모든 세부사항을 알고 있습니다. 때문에 하나의 메서드 안에서 극장에서 발생하는 모든 일들을 처리하고 있습니다. 모든 세부사항을 써내려간 코드는 작성자 뿐만 아니라 <strong>코드를 읽고 이해해야 하는 사람에게도 큰 부담이 됩니다.</strong></p>
+<h2 id="문제점3-가정이-바뀌면-모든-코드가-흔들린다"><a href="#문제점3-가정이-바뀌면-모든-코드가-흔들린다" class="headerlink" title="문제점3. 가정이 바뀌면 모든 코드가 흔들린다"></a>문제점3. 가정이 바뀌면 모든 코드가 흔들린다</h2><p>관람객이 가방을 들고 있지 않거나 현금이 아닌 카드로 결제를 한다거나 판매원이 매표소가 아닌 곳에서 티켓을 판매한다면 코드에는 어떤 변화가 생길까요?</p>
+<p>Audience 클래스에서 Bag을 제거합니다. 그리고 Theater 의 enter 메서드에서도 Bag에 접근하고 있는 코드를 전부 제거해야 합니다. 판매원의 매표소 또한 마찬가지 입니다. enter 메서드에서 매표소에 접근하고 있는 코드를 찾아서 제거해야 합니다.</p>
+<p>Theater 클래스에서 Audience와 TicketSeller 의 세부적인 내용까지 전부 다 알고 있기 때문에, Audience와 TicketSeller에 변경이 일어나면 Theater 클래스까지 함께 변경해야 합니다. Theater 클래스가 두 클래스에 의존을 하고 있기 때문입니다. 객체 사이의 의존성이 높으면 결합도가 높다고 말합니다. 결국 의존성, 결합도는 변경과 관련이 있습니다. <strong>객체 사이의 의존성, 결합도가 높으면 코드를 변경하기 어려워집니다.</strong></p>
+<h1 id="3-설계-개선하기"><a href="#3-설계-개선하기" class="headerlink" title="3. 설계 개선하기"></a>3. 설계 개선하기</h1><p>예제 코드는 소프트웨어 모듈이 가져야하는 세가지 목적 중 한가지를 만족시킵니다. (실행 중에 제대로 동작하는 것) 하지만 변경하기가 어렵고, 코드를 읽는 사람이 이해하기가 어려워 의사소통 하는 데 문제가 있는 코드입니다. 두가지 목적도 만족시키기 위해서 코드를 개선해봅시다.</p>
+<h2 id="관람객과-판매원의-자율성을-높이자"><a href="#관람객과-판매원의-자율성을-높이자" class="headerlink" title="관람객과 판매원의 자율성을 높이자"></a>관람객과 판매원의 자율성을 높이자</h2><p>Theater가 Audience와 TicketSeller에 관한 세부적인 내용을 알지 못하도록 만듭니다. Theater는 Audience가 Bag을 가지고 있으며 Bag에는 어떤 것들이 있는지 알아야 할 필요가 없습니다. TicketSeller에 관한 세부적인 내용도 알 필요가 없죠. Theater의 관심사는 관람객이 극장에 입장하는 것입니다.</p>
+<p>관람객이 가방에서 초대장을 티켓으로 교환하거나 티켓을 구매하게 만들고, 판매원이 자신이 일하는 매표소에서 티켓을 판매하고 티켓 금액을 처리하게 만들면 코드가 개선될 것입니다.</p>
+<p>Theater 의 enter 메서드에서 처리하고 있었던 해당 코드를 찾아서 각 객체 내부에 옮겨봅시다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Theater</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> TicketSeller ticketSeller;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Theater</span><span class="params">(TicketSeller ticketSeller)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.ticketSeller = ticketSeller;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">enter</span> <span class="params">(Audience audience)</span> &#123;</span><br><span class="line"><span class="comment">//		if (audience.getBag().hasInvitation()) &#123;</span></span><br><span class="line"><span class="comment">//			Ticket ticket = ticketSeller.getTicketOffice().getTicket);</span></span><br><span class="line"><span class="comment">//			audience.getBag().setTicket(ticket);</span></span><br><span class="line"><span class="comment">//		&#125; else &#123;</span></span><br><span class="line"><span class="comment">//			Ticket ticket = ticketSeller.getTicketOffice().getTicket();</span></span><br><span class="line"><span class="comment">//			audience.getBag().minusAmount(ticket.getFee());</span></span><br><span class="line"><span class="comment">//			ticketSeller.getTicketOffice().plusAmount(ticket.getFee());</span></span><br><span class="line"><span class="comment">//			audience.getBag().setTicket(ticket);</span></span><br><span class="line"><span class="comment">//		&#125;</span></span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TicketSeller</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> TicketOffice ticketOffice;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">TicketSeller</span><span class="params">(TicketOffice ticketoffice)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.ticketoffice = ticketoffice;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//		public Ticketoffice getTicketOffice() &#123; </span></span><br><span class="line"><span class="comment">//				return ticketoffice;</span></span><br><span class="line"><span class="comment">//		&#125;</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sellTo</span><span class="params">(Audience audience)</span> &#123;</span><br><span class="line">				<span class="keyword">if</span> (audience.getBag().hasInvitation()) &#123;</span><br><span class="line">					<span class="type">Ticket</span> <span class="variable">ticket</span> <span class="operator">=</span> ticketOffice.getTicket);</span><br><span class="line">					audience.getBag().setTicket(ticket); </span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					<span class="type">Ticket</span> <span class="variable">ticket</span> <span class="operator">=</span> ticketOffice.getTicket);</span><br><span class="line">					audience.getBag().minusAmount(ticket.getFee()); </span><br><span class="line">					ticketOffice.plusAmount(ticket.getFee()); </span><br><span class="line">					audience.getBag().setTicket(ticket);</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/03/16/chapter-2-data/">chapter2. 데이터</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/12/object-1-object-and-design/">Object - 1.객체, 설계</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/05/the-essence-of-object-orientation-abstraction-md/">객체지향의 사실과 오해 - 추상화</a>
-          </li>
-        
-          <li>
-            <a href="/2023/10/30/mysql-rank-and-partition-by/">order by 후 group by 를 하고 싶을 때</a>
-          </li>
-        
-          <li>
-            <a href="/2023/10/22/the-essence-of-object-orientation-object/">객체지향의 사실과 오해 - 객체편</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<p>enter 메서드에서 직접 TicketOffice에 접근하고 있던 코드를 전부 TicketSeller의 sellTo 메서드로 옮겼습니다. 이제 외부에서 TicketOffice에 직접 접근할 수 있는 방법이 없기 때문에 getTicketOffice 메서드는 제거가 되었습니다. TicketSeller 가 TicketOffice에서 티켓을 꺼내고 판매하고 티켓 금액을 처리할 수 있게 되었어요.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**💡 이어지는 개념**</span><br><span class="line">캡슐화: 개념적이나 물리적으로 객체 내부의 세부적인 사항을 감추는 것</span><br><span class="line">캡슐화의 목적: 객체 사이의 결합도를 낮추어 변경하기 쉬운 객체를 만드는 것</span><br></pre></td></tr></table></figure>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 kelly<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+<p>TicketSeller의 sellTo 메서드에서는 여전히 Audience 가 수동적인 존재입니다. 이번엔 TicketSeller가 Audience의 Bag에 직접 접근을 하고 있어요. 이번엔 Bag에 접근하는 코드를 전부 옮겨봅시다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Audience</span> &#123; </span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Bag bag;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Audience</span><span class="params">(Bag bag)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.bag = bag;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//		public Bag getBag() &#123; </span></span><br><span class="line"><span class="comment">//			return bag;</span></span><br><span class="line"><span class="comment">//		&#125;</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> Long <span class="title function_">buy</span><span class="params">(Ticket ticket)</span> &#123; </span><br><span class="line">				<span class="keyword">if</span> (bag.hasInvitation()) &#123;</span><br><span class="line">					bag.setTicket(ticket); </span><br><span class="line">					<span class="keyword">return</span> <span class="number">0L</span>;</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					bag.setTicket(ticket); </span><br><span class="line">					bag.minusAmount(ticket.getFee()); </span><br><span class="line">					<span class="keyword">return</span> ticket.getFee();</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+<p>이제는 Audience가 초대장이 있는지 스스로 확인할 수 있게 되었습니다. Audience가 Bag을 직접 처리하고 있기 때문에 외부에서는 Bag에 대한 접근을 할 수가 없도록 getBag 메서드를 제거하였습니다.</p>
+<p>내부 구현을 캡슐화하였더니 객체들 사이의 결합도가 낮아졌습니다. 가정이 바뀌어도 Audience와 TicketSeller 의 코드 변경이 Theater에 영향을 미치지 않습니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Theater</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> TicketSeller ticketSeller;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Theater</span><span class="params">(TicketSeller ticketSeller)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.ticketSeller = ticketSeller;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">enter</span> <span class="params">(Audience audience)</span> &#123;</span><br><span class="line">				ticketSeller.sellTo(audience);</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TicketSeller</span> &#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> TicketOffice ticketOffice;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">TicketSeller</span><span class="params">(TicketOffice ticketoffice)</span> &#123; </span><br><span class="line">				<span class="built_in">this</span>.ticketoffice = ticketoffice;</span><br><span class="line">		</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sellTo</span><span class="params">(Audience audience)</span> &#123;</span><br><span class="line">				ticketoffice.plusAmount(audience.buy(ticketoffice.getTicket()));</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Audience</span> &#123; </span><br><span class="line"></span><br><span class="line">		<span class="keyword">private</span> Bag bag;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> <span class="title function_">Audience</span><span class="params">(Bag bag)</span> &#123; </span><br><span class="line">			<span class="built_in">this</span>.bag = bag;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">public</span> Long <span class="title function_">buy</span><span class="params">(Ticket ticket)</span> &#123; </span><br><span class="line">				<span class="keyword">if</span> (bag.hasInvitation()) &#123;</span><br><span class="line">					bag.setTicket(ticket); </span><br><span class="line">					<span class="keyword">return</span> <span class="number">0L</span>;</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					bag.setTicket(ticket); </span><br><span class="line">					bag.minusAmount(ticket.getFee()); </span><br><span class="line">					<span class="keyword">return</span> ticket.getFee();</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+<p>소프트웨어 모듈이 가져야 하는 세가지 목적을 다시 한번 살펴봅시다.</p>
+<ul>
+<li>첫번째, 실행 중에 제대로 동작하는 것</li>
+<li>두번째, 변경을 위해 존재하는 것</li>
+<li>세번째, 코드를 읽는 사람과 의사소통 하는 것</li>
+</ul>
+<p>기존 코드에서는 두번째, 세번째의 목적을 만족시키지 못했지만 수정된 코드는 이를 만족시킵니다.</p>
+<h2 id="캡슐화와-응집도"><a href="#캡슐화와-응집도" class="headerlink" title="캡슐화와 응집도"></a>캡슐화와 응집도</h2><p>Theater의 enter 메서드에서 Audience의 Bag 클래스, TicketSeller의 TicketOffice 클래스에 직접 접근 하고 있던 부분을 차단하고 Audience와 TicketSeller에서 직접 처리할 수 있게 하였습니다. Theater 클래스는 이제 더이상 Audience와 TicketSeller의 내부 구현에 대해서는 알지 못합니다. 그리고 객체들은 서로 메시지를 주고 받으며 의사소통 할 수 있게 되었습니다.</p>
+<p>밀접하게 연관되어 있는 작업만 수행하고 연관성이 없는 작업은 다른 객체에게 위임하는 객체를 보고 응집도가 높다고 말합니다. 이는 즉 <strong>객체의 응집도를 높이려면 객체 스스로가 자신의 데이터를 책임져야 한다</strong>는 것을 의미합니다.</p>
+<h2 id="책임의-이동"><a href="#책임의-이동" class="headerlink" title="책임의 이동"></a>책임의 이동</h2><p>코드를 변경 하기 전의 절차적 설계에서는 Theater에 모든 책임이 있었습니다. enter 메서드에서 관람객이 극장에 입장하는 데 필요한 모든 절차를 처리하고 있었어요. 변경 후의 객체지향 설계에서는 각각의 객체가 자신이 맡은 일을 처리했습니다. Theater에 몰려 있던 책임이 개별 객체로 이동한 것입니다.</p>
+<p>설계를 어렵게 만드는 것은 <strong>의존성</strong>입니다. 이 문제를 해결하기 위한 방법은 객체들 사이의 불필요한 의존성을 찾아내고 이를 제거해서 객체 사이의 결합도를 느슨하게 낮추어 놓는 것입니다. 예제 코드에서는 결합도를 낮추기 위해서 Audience와 TicketSeller 내부에 세부사항들을 <strong>캡슐화</strong> 하였습니다.</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-16T06:02:27.000Z">2024-03-16</time></p><p class="title"><a href="/2024/03/16/chapter-2-data/">chapter2. 데이터</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-11-12T02:21:59.000Z">2023-11-12</time></p><p class="title"><a href="/2023/11/12/object-1-object-and-design/">Object - 1.객체, 설계</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-11-05T13:44:15.000Z">2023-11-05</time></p><p class="title"><a href="/2023/11/05/the-essence-of-object-orientation-abstraction-md/">객체지향의 사실과 오해 - 추상화</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-29T15:31:57.000Z">2023-10-30</time></p><p class="title"><a href="/2023/10/30/mysql-rank-and-partition-by/">order by 후 group by 를 하고 싶을 때</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-22T02:31:16.000Z">2023-10-22</time></p><p class="title"><a href="/2023/10/22/the-essence-of-object-orientation-object/">객체지향의 사실과 오해 - 객체편</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/03/"><span class="level-start"><span class="level-item">March 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/11/"><span class="level-start"><span class="level-item">November 2023</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/10/"><span class="level-start"><span class="level-item">October 2023</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/mysql-order-by-group-by-rank-partition-by/"><span class="tag">mysql, order by, group by, rank, partition by</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EB%8F%85%ED%9B%84%EA%B0%90/"><span class="tag">객체지향의 사실과 오해, 독후감</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EC%B6%94%EC%83%81%ED%99%94-%EB%8B%A4%ED%98%95%EC%84%B1-%EB%8F%85%ED%9B%84%EA%B0%90/"><span class="tag">객체지향의 사실과 오해, 추상화, 다형성, 독후감</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EA%B0%9D%EC%B2%B4-%EC%84%A4%EA%B3%84/"><span class="tag">오브젝트, 객체, 설계</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%98%BC%EC%9E%90%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/"><span class="tag">혼자공부하는컴퓨터구조</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="지식 보관소" height="28"></a><p class="is-size-7"><span>&copy; 2024 kelly</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
